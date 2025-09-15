@@ -1,3 +1,5 @@
+import styles from "./styles.module.css"
+
 // Tipo props é igual ao react components no caso button
 // e as propriedades que eu estou passando
 
@@ -14,6 +16,10 @@ type Props = React.ComponentProps<"button"> &{
                     // das propriedades
 export function Button({name, ...rest}: Props){
     return(
-        <button {...rest}>{name} </button>
+        <button className={styles.container} {...rest}>
+            <span>
+                {name} 
+            </span>
+        </button>
     )
 }
