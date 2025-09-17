@@ -1,14 +1,16 @@
 import "./global.css" // sempre no topo pra nn resetar outras configs
 import {Button} from "./components/button"
-import "./styles.css"
+
+import styles from "./app.module.css"
 
 // Todo componente tem que começar com letra maiuscula
 export function App(){
   return (
-    <div className="container">
-      <Button name="Criar" onClick={() => alert("Criar")}/>
-      <Button name="Editar" onClick={() => alert("Editar")}/>
-      <Button name="Remover" onClick={() => alert("Remover")}/>
+    <div className={styles.container}>
+      
+      <Button name="Adicionar" />
+      <span>0</span>
+      <Button name="Remover" />
       
     </div>
   )
