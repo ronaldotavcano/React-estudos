@@ -1,0 +1,9 @@
+Hooks -> permite que você use estados e outros recursos do
+React sem escrever uma classe. Encapsula funcionalidades e
+facilita o reaproveitamento da sua lógica. Escrito em camel
+case
+
+useState -> Permite add uma váriavel de estado do componente
+
+useEffect -> Utilizado no ciclo de vida do componente e 
+permitemite trabalhar com side-effect(efeitos colaterais)
