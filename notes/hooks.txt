@@ -7,3 +7,36 @@ useState -> Permite add uma váriavel de estado do componente
 
 useEffect -> Utilizado no ciclo de vida do componente e 
 permitemite trabalhar com side-effect(efeitos colaterais)
+
+Render -> antes dos seus componentes serem exibidos na tela eles
+devem ser renderizados pelo React.
+
+Etapa 1 -> Acionar:
+
+Há 2 razões para um componente renderizar:
+
+1) Quando é a renderização inicial do componente, ou seja, quando o seu
+aplicativo é iniciado a renderização inicial também é acionada.
+
+2) O estado do componente mudou, a atualização do estado do componente
+enfileira automaticamente uma renderização. Você pode imaginar o cliente
+do restaurante pedindo mais coisas.
+
+Etapa 2 -> React re-renderizar seus componentes.
+
+Depois de acionar uma renderização o React chama os componentes para
+descobrir oq exibir na tela, o rendering é o react chamando seus com
+ponentes. Na renderização inicial o react chama seu componente raiz,
+para renderizações futuras o react chamará o componente de função cuja
+atualização de estado acionou a renderização.
+
+Esse processo é recursivo, o componente também pode disparar um gatilho
+para renderizar algo em seguida e assim por diante.
+
+Etapa 3 -> React confirma as alterações na DOM.
+
+após renderizar seus componentes o React modificará o DOM, para Render
+ização inicial o react usará a API DOM para colocar todos os nós DOM 
+criados na tela. Para re-renderizações o react aplicará as operações
+mínimas necessárias (calculadas durante a renderização) para fazer o 
+DOM corresponder à saída de renderização mais recente.

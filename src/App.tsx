@@ -8,7 +8,7 @@ import styles from "./app.module.css"
 
 // Todo componente tem que começar com letra maiuscula
 export function App(){
-  const { show }= useMessage({age: 20,name: "Ronaldo,"})
+  const { show }= useMessage({age: 20, name: "Ronaldo,"})
 
   return (
     <div className={styles.container}>
