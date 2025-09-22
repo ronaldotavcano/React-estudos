@@ -1,0 +1,4 @@
+Utilizado no ciclo de vida do componente quando o componente é renderizado. e
+permite trabalhar com side-effects (efeitos colaterais). Ee precisa estar dentro de
+um componente, para poder acessar os estados do componente. não podemos usar, async
+no useEffect

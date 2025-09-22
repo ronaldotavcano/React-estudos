@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+
 type Props = {
     name: string,
     age: number,
@@ -10,3 +12,7 @@ export function useMessage( {name}: Props){
 
   return { show }
 }
+
+useEffect(() => {
+  console.log("Eu sou o useEffect do useMessage")
+}, [])
